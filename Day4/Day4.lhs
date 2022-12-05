@@ -37,6 +37,7 @@ count of the overlaping sections to get the total ammount of them
 >                               | br1>=br2 && ur1<=ur2 = 1+countTotalOverlaps rs
 >                               | otherwise = 0+countTotalOverlaps rs
 >countTotalOverlaps [] = 0
+>countTotalOverlaps _ = -1
 
 >countPartialOverlaps:: [Int]->Int
 >countPartialOverlaps (br1:ur1:br2:ur2:rs) 
@@ -46,3 +47,4 @@ count of the overlaping sections to get the total ammount of them
 >                               | br1>=br2 && ur1<=ur2 = 1+countPartialOverlaps rs
 >                               | otherwise = 0+countPartialOverlaps rs
 >countPartialOverlaps [] = 0
+>countPartialOverlaps _ = -1
